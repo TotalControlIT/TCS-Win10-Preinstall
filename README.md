@@ -1,12 +1,12 @@
 ## TCS Windows 10 Machine Pre-Installation PreP Tool ##
 
-**Current Ver - v0.11**
+**Current Ver - v0.20**
 
 Use batchfile to launch utility directly.
 
 Alternatively you can call directly within Powershell (elevated) using the below:- 
 
-<code>iwr -useb https://raw.githubusercontent.com/bitterblitter/TCS-Win10-Preinstall/main/TCSWin10Prep.ps1 | iex</code>
+<code>iwr -useb https://raw.githubusercontent.com/TotalControlIT/TCS-Win10-Preinstall/main/TCSWin10Prep.ps1 | iex</code>
 
 Note:
 

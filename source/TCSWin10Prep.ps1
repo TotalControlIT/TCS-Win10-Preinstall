@@ -1,4 +1,4 @@
-# TCS Windows 10 Machine Pre-Installation PreP Tool - v0.11 - Copyright (c) 2023 Carl Hopkins
+# TCS Windows 10 Machine Pre-Installation PreP Tool - v0.20 - Copyright (c) 2024 Total Control Services LTD
 
 Add-Type -AssemblyName System.Windows.Forms
 [System.Windows.Forms.Application]::EnableVisualStyles()
@@ -14,7 +14,7 @@ If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
 
 # Init
 Write-Host "+===================================================+"
-Write-Host ".         TCS Windows 10 PreP Shell - v0.11         ."
+Write-Host ".         TCS Windows 10 PreP Shell - v0.20         ."
 Write-Host "+===================================================+"
 Write-Host ""
 Write-Host "Loading, please wait..."
@@ -22,8 +22,8 @@ Write-Host ""
 
 # Hack to load in required resources
 Import-Module BitsTransfer
-Start-BitsTransfer -Source "https://raw.githubusercontent.com/bitterblitter/TCS-Win10-Preinstall/main/current/bimage.jpg" -Destination bimage.jpg
-Start-BitsTransfer -Source "https://raw.githubusercontent.com/bitterblitter/TCS-Win10-Preinstall/main/current/himage.jpg" -Destination himage.jpg
+Start-BitsTransfer -Source "https://raw.githubusercontent.com/TotalControlIT/TCS-Win10-Preinstall/main/bimage.jpg" -Destination bimage.jpg
+Start-BitsTransfer -Source "https://raw.githubusercontent.com/TotalControlIT/TCS-Win10-Preinstall/main/himage.jpg" -Destination himage.jpg
 Add-Type -Assembly System.Drawing
 $bimage = [System.Drawing.Image]::FromFile("./bimage.jpg")
 Add-Type -Assembly System.Drawing
